@@ -10,7 +10,7 @@ jobs:
     strategy:
       matrix:
         file:
-          - main_file.yaml
+          - vtac_a60.yaml
           - project-template-esp8266.yaml
     steps:
       - name: Checkout source code
