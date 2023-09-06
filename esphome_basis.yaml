@@ -5,11 +5,14 @@ esphome:
 
   name_add_mac_suffix: ${mac_suffix}
 
-  comment: ${device_comment}
-
+  comment: "www.diekruecke.de"
   project:
-    name: ${project_name}
-    version: ${project_version}
+    name: "diekruecke.kruecketemplate_vtec_a60"
+    version: "0.1"
+
+esp8266:
+  board: esp01_1m
+  restore_from_flash: true
 
 web_server:
   port: 80
@@ -23,12 +26,12 @@ ota:
   password: ${ota_password}
 
 wifi:
-  ssid: ${wifi_ssid}
-  password: ${wifi_pw}
   domain: ${wifi_domainname}
   ap:
+    ssid: ${devicename} Fallback
     password: ${wifi_fallback_ap_pw}
 
 improv_serial:
+  next_url: http://{{ip_address}}.smarthome
 
 captive_portal:

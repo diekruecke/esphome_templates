@@ -1,4 +1,3 @@
-# CHANGEME: Set these variable to your liking
-title: V-TAC LED A60 BULB - KrueckeSmarthome
-description: ESP Home Template für V-TAC A60
+title: KrueckeTemplate - Webflasher
+description: ESP Home Template für V-TAC LED A60 BULB
 theme: jekyll-theme-slate

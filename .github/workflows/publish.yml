@@ -9,7 +9,5 @@ jobs:
   build:
     uses: esphome/workflows/.github/workflows/publish.yml@main
     with:
-      # CHANGEME: Set the filenames of your config files here:
       files: main_file.yaml
-      # CHANGEME: Set the name of your project here:
-      name: V-TAC LED A60 BULB - KrueckeSmarthome
+      name: KrueckeTemplates - V-TAC LED A60 BULB
