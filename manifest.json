@@ -1,5 +1,5 @@
 {
-  "name": "V-TAC LED A60 BULB - KrueckeSmarthome",
+  "name": "KrueckeTemplates - V-TAC LED A60 BULB",
   "version": "",
   "home_assistant_domain": "esphome",
   "new_install_skip_erase": false,
