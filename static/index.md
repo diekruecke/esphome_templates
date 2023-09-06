@@ -1,10 +1,13 @@
 # About
 
-Add some information about your project here.
+V-TAC LED A60 BLUB
+VT-5113 SKU-2752
+RGB + 2700K-6400k
+11W - 1055lm - E27
 
 # Installation
 
-You can use the button below to install the pre-built firmware directly to your device via USB from the browser.
+Mit diesem Button kannst du dein Gerät direkt aus dem Browser flashen, dafür muss nur eine USB Verbindung bestehen. Und die Kiste muss natürlich auch im Flash-Modus sein.
 
 <esp-web-install-button manifest="./manifest.json"></esp-web-install-button>
 

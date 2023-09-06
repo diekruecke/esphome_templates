@@ -1,0 +1,100 @@
+light:
+  - platform: rgbww
+    name: ${friendly_devicename}
+    red: output_red
+    green: output_green
+    blue: output_blue
+    cold_white: output_white
+    warm_white: output_warmwhite
+    cold_white_color_temperature: 6400 K
+    warm_white_color_temperature: 2700 K
+    constant_brightness: true
+    color_interlock: true
+    restore_mode: RESTORE_DEFAULT_ON    
+    effects:
+      - random:
+          name: "Random Color Slow"
+          transition_length: 30s
+          update_interval: 30s
+      - random:
+          name: "Random Color Fast"
+          transition_length: 4s
+          update_interval: 5s
+      - pulse:
+          name: "Fast Pulse"
+          transition_length: 0.5s
+          update_interval: 0.5s
+          min_brightness: 0%
+          max_brightness: 100%
+      - pulse:
+          name: "Slow Pulse"
+          transition_length: 1s
+          update_interval: 2s
+      - strobe:
+          name: "RGB Strobe"
+          colors:
+            - state: true
+              brightness: 100%
+              red: 100%
+              green: 0%
+              blue: 0%
+              duration: 500ms
+            - state: false
+              duration: 250ms
+            - state: true
+              brightness: 100%
+              red: 0%
+              green: 100%
+              blue: 0%
+              duration: 500ms
+            - state: false
+              duration: 250ms
+            - state: true
+              brightness: 100%
+              red: 0%
+              green: 0%
+              blue: 100%
+              duration: 500ms
+            - state: false
+              duration: 250ms
+      - strobe:
+          name: "White Strobe"
+          colors:
+            - state: true
+              brightness: 100%
+              cold_white: 100%
+              duration: 500ms
+            - state: false
+              duration: 250ms
+      - flicker:
+          name: "Flicker Effect"
+          alpha: 95%
+          intensity: 1.5%
+
+# Example configuration entry
+sm2135:
+  data_pin: GPIO14
+  clock_pin: GPIO4
+
+# Individual outputs
+output:
+  - platform: sm2135
+    id: output_green
+    channel: 0
+    max_power: 0.8
+  - platform: sm2135
+    id: output_blue
+    channel: 1
+    max_power: 0.8
+  - platform: sm2135
+    id: output_red
+    channel: 2
+    max_power: 0.8
+  - platform: sm2135
+    id: output_white
+    channel: 3
+    max_power: 0.8
+  - platform: sm2135
+    id: output_warmwhite
+    channel: 4
+    max_power: 0.8

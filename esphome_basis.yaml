@@ -1,0 +1,34 @@
+esphome:
+  name: ${devicename}
+  friendly_name: "${friendly_devicename}"
+  build_path: ./build/${devicename}
+
+  name_add_mac_suffix: ${mac_suffix}
+
+  comment: ${device_comment}
+
+  project:
+    name: ${project_name}
+    version: ${project_version}
+
+web_server:
+  port: 80
+  js_include: "webinterface/www.js"
+  js_url: ""
+  version: 2
+
+logger:
+
+ota:
+  password: ${ota_password}
+
+wifi:
+  ssid: ${wifi_ssid}
+  password: ${wifi_pw}
+  domain: ${wifi_domainname}
+  ap:
+    password: ${wifi_fallback_ap_pw}
+
+improv_serial:
+
+captive_portal:

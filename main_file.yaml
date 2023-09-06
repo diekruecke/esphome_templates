@@ -1,0 +1,32 @@
+# V-TAC LED A60 BULB
+
+substitutions:
+  devicename: "vtac-a60"
+  friendly_devicename: "V-TAC LED A60 BLUB"
+  device_comment: "www.diekruecke.de"
+
+  project_name: "diekruecke.vtac-a60"
+  project_version: "0.1"
+
+  mac_suffix: "true"
+
+  wifi_ssid: ""
+  wifi_pw: ""
+  wifi_domainname: ".local"
+  wifi_fallback_ap_pw: ""
+
+  ota_password: ""
+  api_key: ""
+
+packages:
+  esphome_basis: !include esphome_basis.yaml
+  homeassistant: !include homeassistant.yaml
+  vtac60: !include vtac60.yaml
+
+esp8266:
+  board: esp01_1m
+  restore_from_flash: true
+
+# This should point to the public location of this yaml file.
+dashboard_import:
+  package_import_url: github://esphome/esphome-project-template/project-template-esp8266.yaml@main
