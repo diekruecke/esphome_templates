@@ -29,4 +29,4 @@ esp8266:
 
 # This should point to the public location of this yaml file.
 dashboard_import:
-  package_import_url: github://esphome/esphome-project-template/project-template-esp8266.yaml@main
+  package_import_url: github://diekruecke/esphome_template_vtac60/main_file.yaml@main
