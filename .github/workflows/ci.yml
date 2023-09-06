@@ -11,6 +11,7 @@ jobs:
       matrix:
         file:
           - main_file.yaml
+          - project-template-esp8266.yaml
     steps:
       - name: Checkout source code
         uses: actions/checkout@v2

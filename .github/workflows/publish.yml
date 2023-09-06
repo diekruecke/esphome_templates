@@ -9,5 +9,5 @@ jobs:
   build:
     uses: esphome/workflows/.github/workflows/publish.yml@main
     with:
-      files: main_file.yaml
+      files: main_file.yaml,project-template-esp8266.yaml
       name: KrueckeTemplates - V-TAC LED A60 BULB
