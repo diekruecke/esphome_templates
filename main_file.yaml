@@ -5,18 +5,22 @@ substitutions:
   friendly_devicename: "V-TAC LED A60 BLUB"
   device_comment: "www.diekruecke.de"
 
-  project_name: "diekruecke.vtac-a60"
+  project_name: "diekruecke.esphome_template_vtac60"
   project_version: "0.1"
 
   mac_suffix: "true"
 
-  wifi_ssid: ""
-  wifi_pw: ""
+  #Add your WIFI Credentials
+  wifi_ssid: "12341234"
+  wifi_pw: "12341234"
   wifi_domainname: ".local"
   wifi_fallback_ap_pw: ""
 
+  #protect the OTA Access to your Device
   ota_password: ""
-  api_key: ""
+
+  #replace this key -> https://esphome.io/components/api.html?highlight=api+key#configuration-variables
+  api_key: "DaPSLoUXvbnPYBfVl30tdnz8uRgHCIQJIcPr6mJajPA="
 
 packages:
   esphome_basis: !include esphome_basis.yaml
