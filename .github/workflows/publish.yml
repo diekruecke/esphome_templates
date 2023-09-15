@@ -9,5 +9,5 @@ jobs:
   build:
     uses: esphome/workflows/.github/workflows/publish.yml@main
     with:
-      files: vtac-a60.yaml.yaml,basic-8266.yaml
+      files: vtac-a60yaml,basic-8266.yaml
       name: KrueckeTemplates

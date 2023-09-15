@@ -17,6 +17,13 @@ substitutions:
 esp8266:
   board: esp01_1m
 
+esphome:
+  project:
+    name: "diekruecke.basic_8266"
+    version: "0.1"
+
+api:
+  
 packages:
   esphome_basis: !include includes/esphome_config.yaml
 
