@@ -1,3 +1,12 @@
+esphome:
+  project:
+    name: "diekruecke.vtac_a60"
+    version: "0.1"
+
+esp8266:
+  board: esp01_1m
+  restore_from_flash: true
+
 light:
   - platform: rgbww
     name: ${friendly_devicename}

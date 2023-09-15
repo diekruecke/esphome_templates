@@ -10,8 +10,8 @@ jobs:
     strategy:
       matrix:
         file:
-          - vtac_a60.yaml
-          - project-template-esp8266.yaml
+          - vtac-a60.yaml
+          - basic-8266.yaml
     steps:
       - name: Checkout source code
         uses: actions/checkout@v2

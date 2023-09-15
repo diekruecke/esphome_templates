@@ -20,8 +20,8 @@ substitutions:
 packages:
   esphome_basis: !include includes/esphome_config.yaml
   homeassistant: !include includes/homeassistant_config.yaml
-  vtac-a60: !include includes/geräte/licht/vtac-a60.yaml
+  vtac-a60: !include includes/geräte/licht/vtac_a60.yaml
 
 dashboard_import:
-  package_import_url: github://diekruecke/kruecketemplates/vtac_a60.yaml@main
+  package_import_url: github://diekruecke/esphome_templates/vtac-a60.yaml@main
   import_full_config: false

@@ -1,0 +1,24 @@
+# Relevante Geräteinfo
+
+substitutions:
+  devicename: "sonoff-4ch"
+  friendly_devicename: "Sonoff 4CH"
+
+  mac_suffix: "true"
+
+  wifi_domainname: ".smarthome"
+
+  #Protect the Fallback AP
+  wifi_fallback_ap_pw: ""
+
+  #Protect the OTA Access to your Device
+  ota_password: ""
+
+packages:
+  esphome_basis: !include includes/esphome_config.yaml
+  homeassistant: !include includes/homeassistant_config.yaml
+  device_config: !include includes/geräte/licht/vtac_a60.yaml
+
+dashboard_import:
+  package_import_url: github://diekruecke/esphome_templates/sonoff-4ch.yaml@main
+  import_full_config: false
