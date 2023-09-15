@@ -1,18 +1,11 @@
-# V-TAC A60
+# Firmware Install- & Downloadarea
 
-KrueckeTemplate für die "A60 V-TAC LED BULB"
+Meine kleine ESP-Home Template-Sammlung. Teilweise selbstgeschrieben, teilweise bestehende Templates erweitert und manchmal auch ganz frech komplett übernommen.
 
 # Installation
 
-Mit diesem Button kannst du dein Gerät direkt aus dem Browser flashen, dafür muss nur eine USB Verbindung bestehen. Und die Kiste muss natürlich auch im Flash-Modus sein.
+Such dir das für dich passende Template raus und installiere es sofort aus dem Browser. Alternativ kannst du dir auch ne pre-built Firmware Datei oder das YAML File runterladen.<br>
 
 <esp-web-install-button manifest="./manifest.json"></esp-web-install-button>
 
 <script type="module" src="https://unpkg.com/esp-web-tools@9.1.0/dist/web/install-button.js?module"></script>
-
-# Technische Daten zum Gerät
-
-V-TAC LED A60 BULB
-VT-5113 SKU-2752
-RGB + 2700K-6400k
-11W - 1055lm - E27
