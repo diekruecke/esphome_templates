@@ -14,8 +14,10 @@ esp32_improv:
 uart:
   rx_pin: GPIO16
   baud_rate: 4800
-  
+
 sensor:
+  - platform: internal_temperature
+    name: ${friendly_devicename} Int. Temperature
   - platform: cse7766
     update_interval: 10s
     current:
