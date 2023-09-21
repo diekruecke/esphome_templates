@@ -14,6 +14,15 @@
       ]
     },
     {
+      "chipFamily": "ESP32",
+      "parts": [
+        {
+          "path": "pow-origin-16a-esp32/pow-origin-16a-esp32.bin",
+          "offset": 0
+        }
+      ]
+    },
+    {
       "chipFamily": "ESP8266",
       "parts": [
         {
