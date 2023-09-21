@@ -12,6 +12,8 @@ web_server:
   js_include: "webinterface/www.js"
   js_url: ""
   version: 2
+  include_internal: true
+  local: true
 
 logger:
 
