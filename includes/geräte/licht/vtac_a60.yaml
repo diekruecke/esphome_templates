@@ -107,15 +107,3 @@ output:
     id: output_warmwhite
     channel: 4
     max_power: 0.8
-
-
-sensor:
-  # Copy Green
-  - platform: copy
-    source_id: output_green
-    name: "Test Output Green"
-    internal: true
-
-    #entity_category: "diagnostic"
-    #filters:
-    #  - lambda: return min(max(2 * (x + 100.0), 0.0), 100.0);

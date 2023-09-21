@@ -1,6 +1,6 @@
-# KrueckeTemplate - V-TAC LED A60 BULB
+# KrueckeTemplates für SmartHome Geräte
 
-ESPHome Template für die "A60 V-TAC LED BULB"
+Joa div. ESPHome Templates halt :)
 
 Direkt aus dem Browser Flashen: https://diekruecke.github.io/esphome_templates/
 

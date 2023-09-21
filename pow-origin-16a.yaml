@@ -1,11 +1,8 @@
-# V-TAC LED A60 BULB
-# VT-5113 SKU-2752
-# RGB + 2700K-6400k
-# 11W - 1055lm - E27
+# POW Origin 16A
 
 substitutions:
-  devicename: "vtac-a60"
-  friendly_devicename: "V-TAC A60 LED Bulb"
+  devicename: "pow-origin-16a"
+  friendly_devicename: "POW Origin 16A"
 
   mac_suffix: "true"
 
@@ -22,8 +19,8 @@ substitutions:
 packages:
   esphome_basis: !include includes/esphome_config.yaml
   homeassistant: !include includes/homeassistant_config.yaml
-  device_details: !include includes/geräte/licht/vtac_a60.yaml
+  device_details: !include includes/geräte/strom/pow_origin_16a.yaml
 
 dashboard_import:
-  package_import_url: github://diekruecke/esphome_templates/vtac-a60.yaml@main
+  package_import_url: github://diekruecke/esphome_templates/pow-origin-16a.yaml@main
   import_full_config: false

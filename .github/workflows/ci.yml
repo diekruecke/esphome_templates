@@ -12,6 +12,7 @@ jobs:
         file:
           - vtac-a60.yaml
           - basic-8266.yaml
+          - pow-origin-16a.yaml
     steps:
       - name: Checkout source code
         uses: actions/checkout@v2
