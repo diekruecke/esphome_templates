@@ -17,9 +17,19 @@ substitutions:
   #ota_password: !secret ota_password
 
 packages:
-  esphome_basis: !include includes/esphome_config.yaml
-  homeassistant: !include includes/homeassistant_config.yaml
-  device_details: !include includes/geräte/strom/pow_origin_16a.yaml
+  #esphome_basis: !include includes/esphome_config.yaml
+  #homeassistant: !include includes/homeassistant_config.yaml
+  #device_details: !include includes/geräte/strom/pow_origin_16a.yaml
+  # Git repo examples
+  remote_package:
+    url: https://github.com/diekruecke/esphome_templates
+    ref: main
+    refresh: 1d
+    #files: [file1.yml, file2.yml]
+    files:
+      - includes/esphome_config.yaml
+      - includes/homeassistant_config.yaml
+      - includes/geräte/strom/pow_origin_16a.yaml
 
 dashboard_import:
   package_import_url: github://diekruecke/esphome_templates/pow-origin-16a.yaml@main
