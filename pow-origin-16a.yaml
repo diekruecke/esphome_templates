@@ -1,8 +1,8 @@
 # POW Origin 16A
 
 substitutions:
-  devicename: "pow-origin-16a"
-  friendly_devicename: "POW Origin 16A"
+  devicename: "sonoff-pow-origin-16a"
+  friendly_devicename: "Sonoff POW Origin 16A"
 
   mac_suffix: "true"
 
@@ -10,22 +10,17 @@ substitutions:
 
   #Protect the Fallback AP
   wifi_fallback_ap_pw: ""
-  #wifi_fallback_ap_pw: !secret wifi_fallback_ap_pw
+  #wifi_fallback_ap_pw: !secret esphome_fallback_ap_pw
 
   #Protect the OTA Access to your Device
   ota_password: ""
-  #ota_password: !secret ota_password
+  #ota_password: !secret esphome_ota_password
 
 packages:
-  #esphome_basis: !include includes/esphome_config.yaml
-  #homeassistant: !include includes/homeassistant_config.yaml
-  #device_details: !include includes/geräte/strom/pow_origin_16a.yaml
-  # Git repo examples
   remote_package:
     url: https://github.com/diekruecke/esphome_templates
     ref: main
-    refresh: 1d
-    #files: [file1.yml, file2.yml]
+    refresh: 60s
     files:
       - includes/esphome_config.yaml
       - includes/homeassistant_config.yaml
