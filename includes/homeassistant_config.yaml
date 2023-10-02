@@ -5,7 +5,7 @@ api:
 # HA Status Anzeige
 binary_sensor:
   - platform: status
-    name: Status
+    name: HA Verbindungstatus
 
 text_sensor:
 # HA ESPHomeVersions Anzeige
@@ -26,7 +26,7 @@ sensor:
   - platform: uptime
     name: Uptime Sensor
 
-switch:
+button:
   - platform: restart
     name: Restart
   - platform: safe_mode
