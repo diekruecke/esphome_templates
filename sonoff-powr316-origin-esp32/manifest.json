@@ -1,0 +1,9 @@
+{
+  "chipFamily": "ESP32",
+  "parts": [
+    {
+      "path": "sonoff-powr316-origin-esp32/sonoff-powr316-origin-esp32.bin",
+      "offset": 0
+    }
+  ]
+}

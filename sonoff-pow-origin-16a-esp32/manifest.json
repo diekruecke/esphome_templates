@@ -1,9 +1,0 @@
-{
-  "chipFamily": "ESP32",
-  "parts": [
-    {
-      "path": "sonoff-pow-origin-16a-esp32/sonoff-pow-origin-16a-esp32.bin",
-      "offset": 0
-    }
-  ]
-}

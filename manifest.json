@@ -17,7 +17,7 @@
       "chipFamily": "ESP32",
       "parts": [
         {
-          "path": "sonoff-pow-origin-16a-esp32/sonoff-pow-origin-16a-esp32.bin",
+          "path": "sonoff-powr316-origin-esp32/sonoff-powr316-origin-esp32.bin",
           "offset": 0
         }
       ]
