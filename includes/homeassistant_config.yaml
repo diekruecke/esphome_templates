@@ -26,22 +26,6 @@ sensor:
   - platform: uptime
     name: Uptime Sensor
 
-  # Wifi Signalstärke in dB
-  - platform: wifi_signal
-    name: WiFi Signal dB
-    id: wifi_signal_db
-    update_interval: 120s
-    entity_category: "diagnostic"
-
-  # Wifi Signalstärke in %
-  - platform: copy
-    source_id: wifi_signal_db
-    name: WiFi Signal Prozent
-    filters:
-      - lambda: return min(max(2 * (x + 100.0), 0.0), 100.0);
-    unit_of_measurement: "Signal %"
-    entity_category: "diagnostic"
-
 switch:
   - platform: restart
     name: Restart
