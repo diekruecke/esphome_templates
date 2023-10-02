@@ -24,7 +24,7 @@ wifi:
   password: "${wifi_pw}"
   domain: "${wifi_domainname}"
   ap:
-    ssid: ${devicename} Fallback
+    ssid: ${shortname} Fallback
     password: ${wifi_fallback_ap_pw}
 
 improv_serial:

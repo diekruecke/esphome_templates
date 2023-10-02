@@ -3,6 +3,7 @@
 
 substitutions:
   devicename: "sonoff-powr316-origin"
+  shortname: "sonoff-powr316"
   friendly_devicename: "Sonoff POW316 Origin"
 
   mac_suffix: "true"
