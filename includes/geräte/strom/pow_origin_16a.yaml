@@ -70,7 +70,7 @@ switch:
     pin: GPIO13
     id: relay
     internal: ${publish_relay}
-    restore_mode: RESTORE_DEFAULT_ON
+    restore_mode: ALWAYS_ON
     on_turn_on:
       - light.turn_on: switch_led
     on_turn_off:
