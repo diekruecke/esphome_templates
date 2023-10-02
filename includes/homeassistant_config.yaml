@@ -5,30 +5,30 @@ api:
 # HA Status Anzeige
 binary_sensor:
   - platform: status
-    name: ${friendly_devicename} Status
+    name: Status
 
 text_sensor:
 # HA ESPHomeVersions Anzeige
   - platform: version
-    name: ${friendly_devicename} ESPHome Version
+    name: ESPHome Version
     hide_timestamp: true
   
 # HA WifiInfo Anzeige
   - platform: wifi_info
     ip_address:
-      name: ${friendly_devicename} IP Address
+      name: IP Address
     ssid:
-      name: ${friendly_devicename} Connected SSID
+      name: Connected SSID
     mac_address:
-      name: ${friendly_devicename} Mac Wifi Address
+      name: Mac Wifi Address
 
 sensor:
   - platform: uptime
-    name: ${friendly_devicename} Uptime Sensor
+    name: Uptime Sensor
 
   # Wifi Signalstärke in dB
   - platform: wifi_signal
-    name: ${friendly_devicename} WiFi Signal dB
+    name: WiFi Signal dB
     id: wifi_signal_db
     update_interval: 120s
     entity_category: "diagnostic"
@@ -36,7 +36,7 @@ sensor:
   # Wifi Signalstärke in %
   - platform: copy
     source_id: wifi_signal_db
-    name: ${friendly_devicename} WiFi Signal Prozent
+    name: WiFi Signal Prozent
     filters:
       - lambda: return min(max(2 * (x + 100.0), 0.0), 100.0);
     unit_of_measurement: "Signal %"
@@ -44,10 +44,10 @@ sensor:
 
 switch:
   - platform: restart
-    name: ${friendly_devicename} Restart
+    name: Restart
   - platform: safe_mode
-    name: ${friendly_devicename} Restart into Safe Mode
+    name: Restart into Safe Mode
     disabled_by_default: true
   - platform: factory_reset
-    name: ${friendly_devicename} Reset to Factory Settings
+    name: Reset to Factory Settings
     disabled_by_default: true
