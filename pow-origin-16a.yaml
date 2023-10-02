@@ -6,6 +6,13 @@ substitutions:
 
   mac_suffix: "true"
 
+  # Your WifiData
+  wifi: "YourRandomWifi"
+  #wifi: !secret krueckesmarthomewifi
+
+  wifi_pw: "YourRandomWifiPassword"
+  #wifi_pw: !secret krueckesmarthomewifi_pw
+
   wifi_domainname: ".smarthome"
 
   #Protect the Fallback AP
@@ -15,6 +22,9 @@ substitutions:
   #Protect the OTA Access to your Device
   ota_password: ""
   #ota_password: !secret esphome_ota_password
+
+  #Publish the Relay to Homeassistant
+  publish_relay: false
 
 packages:
   remote_package:
