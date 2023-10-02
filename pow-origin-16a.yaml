@@ -24,7 +24,7 @@ substitutions:
   #ota_password: !secret esphome_ota_password
 
   #Publish the Relay to Homeassistant
-  publish_relay: false
+  publish_relay: "false"
 
 packages:
   remote_package:

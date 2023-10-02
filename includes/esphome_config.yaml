@@ -19,9 +19,9 @@ ota:
   password: ${ota_password}
 
 wifi:
-  ssid: ${wifi}
-  password: ${wifi_pw}
-  domain: ${wifi_domainname}
+  ssid: "${wifi}"
+  password: "${wifi_pw}"
+  domain: "${wifi_domainname}"
   ap:
     ssid: ${devicename} Fallback
     password: ${wifi_fallback_ap_pw}
