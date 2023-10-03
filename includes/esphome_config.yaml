@@ -8,6 +8,8 @@ esphome:
 
 web_server:
   include_internal: true
+  local: false
+  log: true
 
 logger:
   level: INFO
