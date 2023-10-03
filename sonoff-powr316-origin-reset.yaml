@@ -1,0 +1,64 @@
+# Sonoff POW316 Origin
+# sonoff-powr316-origin
+
+substitutions:
+  devicename: "sonoff-powr316-origin"
+  shortname: "sonoff-powr316"
+  friendly_devicename: "Sonoff POW316 Origin"
+
+  # Your WifiData
+  wifi: "YourRandomWifi"
+  #wifi: !secret krueckesmarthomewifi
+
+  wifi_pw: "YourRandomWifiPassword"
+  #wifi_pw: !secret krueckesmarthomewifi_pw
+
+  wifi_domainname: ".smarthome"
+
+  #Protect the Fallback AP
+  wifi_fallback_ap_pw: ""
+  #wifi_fallback_ap_pw: !secret esphome_fallback_ap_pw
+
+esphome:
+  name: ${devicename}
+  friendly_name: "${friendly_devicename}"
+
+  name_add_mac_suffix: ${mac_suffix}
+
+  comment: "RESET-TEMPLATE"
+  project:
+    name: "diekruecke.sonoff-powr316-origin-reset"
+    version: "0.1"
+
+web_server:
+
+logger:
+
+esp32:
+  board: nodemcu-32s
+  framework:
+    type: arduino
+
+esp32_improv:
+  authorizer: none
+ota:
+
+wifi:
+  ssid: "${wifi}"
+  password: "${wifi_pw}"
+  domain: "${wifi_domainname}"
+  ap:
+    ssid: ${shortname} Fallback
+    password: ${wifi_fallback_ap_pw}
+
+improv_serial:
+  next_url: http://{{ip_address}}.${wifi_domainname}
+
+captive_portal:
+
+api:
+
+status_led:
+  pin:
+    number: GPIO16
+    inverted: yes

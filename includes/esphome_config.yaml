@@ -8,7 +8,7 @@ esphome:
 
 web_server:
   include_internal: true
-  local: false
+  local: true
   log: true
 
 logger:
@@ -24,8 +24,5 @@ wifi:
   ap:
     ssid: ${shortname} Fallback
     password: ${wifi_fallback_ap_pw}
-
-improv_serial:
-  next_url: http://{{ip_address}}.${wifi_domainname}
 
 captive_portal:

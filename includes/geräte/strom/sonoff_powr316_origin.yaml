@@ -1,23 +1,18 @@
 esphome:
   project:
     name: "diekruecke.sonoff-powr316-origin"
-    version: "0.2"
+    version: "0.3"
 
 esp32:
   board: nodemcu-32s
   framework:
     type: arduino
 
-esp32_improv:
-  authorizer: none
-
 uart:
   rx_pin: GPIO16
   baud_rate: 4800
 
 sensor:
-  - platform: internal_temperature
-    name: Int. Temperature
   - platform: cse7766
     update_interval: 10s
     current:
@@ -32,7 +27,6 @@ sensor:
     energy:
       name: Energy
       id: wh_sensor
-      accuracy_decimals: 2
 
 output:
   - platform: ledc
@@ -62,6 +56,7 @@ binary_sensor:
         pullup: true
       inverted: true
     name: "Button"
+    internal: true
     on_press:
       - switch.toggle: relay
 

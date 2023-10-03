@@ -27,8 +27,11 @@ sensor:
 
 button:
   - platform: restart
-    name: Restart
+    name: Neustarten
     disabled_by_default: true
   - platform: factory_reset
-    name: Reset to Factory Settings
+    name: Werkseinstellungen wiederherstellen
     disabled_by_default: true
+  - platform: safe_mode
+    name: In Safe Mode Starten
+    internal: true
