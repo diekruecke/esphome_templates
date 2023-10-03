@@ -7,11 +7,7 @@ esphome:
   comment: "https://github.com/diekruecke/esphome_templates"
 
 web_server:
-  port: 80
-  #js_url: "https://raw.githubusercontent.com/diekruecke/esphome_templates/main/includes/webinterface/www.js"
-  version: 2
   include_internal: true
-  local: true
 
 logger:
   level: INFO
