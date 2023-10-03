@@ -23,12 +23,11 @@ text_sensor:
 sensor:
   - platform: uptime
     name: Uptime Sensor
+    update_interval: 1min
 
 button:
   - platform: restart
     name: Restart
-  - platform: safe_mode
-    name: Restart into Safe Mode
     disabled_by_default: true
   - platform: factory_reset
     name: Reset to Factory Settings
